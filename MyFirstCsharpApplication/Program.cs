@@ -35,7 +35,7 @@
             }
 
 
-            while(!int.TryParse(userTyppedValue, out resultc))
+            while (!int.TryParse(userTyppedValue, out resultc))
             {
                 //print something here
             }
@@ -59,6 +59,8 @@
             {
                 Console.WriteLine(msg);
             }
+
+            LoopAndPrintWithFor(10);
             Console.ReadLine();
 
             //visibility returnDataType nameOfTheProc(parms)
@@ -112,6 +114,14 @@
             else
             {
                 return (calculationResult, $"unable to process...", isCalcationSucceed);
+            }
+        }
+
+        static void LoopAndPrintWithFor(int numberOfTimeToLoop)
+        {
+            for (int i = 0; i < numberOfTimeToLoop; i++)
+            {
+                Console.WriteLine($"the loop is on {i} number ");
             }
         }
     }
